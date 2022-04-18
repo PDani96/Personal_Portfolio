@@ -1,14 +1,37 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
-    <h1>Welcome to the Meeting Planner!</h1>
+
+    <h1>Welcome to my Personal Portfolio!</h1>
     <p>
         This is a rough draft of the personal portfolio home page for
         <em>Preston Danielson</em>
         See <a href="https://www.linkedin.com/in/preston-danielson-eit-1844b9103/">LinkedIn</a>
     </p>
+
+    <div class="row justify-content-center">
+        <div class="card" style="width: 35rem; height: 20rem;">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <div class="card-img-top d-flex align-items-center bg-white">
+                    <div class="avatar-big">
+                        <img class="avatar-img rounded-circle" src="{% static 'img/headshot.jpg' %}" />
+                    </div>
+                    <h4 class="col p-2 m-0">Preston Danielson</h4>
+                    <p class="col p-2 m-0">Electrical/Software Engineer</p>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <h2>Meetings</h2>
     <ul>
