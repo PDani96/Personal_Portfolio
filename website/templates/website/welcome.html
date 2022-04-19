@@ -5,44 +5,46 @@
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
-    <div class="container-fluid mt-5 mb-5">
-        <div class="row justify-content-center">
-            <div class="col-auto card-container">
-                <div class="card-flip">
-                    <div class="card front">
-                        <div class="shadow-lg p-2 bg-white rounded">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="avatar-big">
-                                            <img class="avatar-img rounded-circle"
-                                                 src="{% static 'img/headshot.jpg' %}"
-                                            />
+    <div class="parallax-bg" style="--url: url({% static 'img/dallas_skyline.jpg' %});">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-auto card-container mt-5 mb-5">
+                    <div class="card-flip">
+                        <div class="card front">
+                            <div class="shadow-lg p-2 bg-white rounded">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="avatar-big">
+                                                <img class="avatar-img rounded-circle"
+                                                     src="{% static 'img/headshot.jpg' %}"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <h4>Preston Danielson</h4>
+                                            Electrical/Software Engineer
                                         </div>
                                     </div>
-                                    <div class="col-8">
-                                        <h4>Preston Danielson</h4>
-                                        Electrical/Software Engineer
-                                    </div>
-                                </div>
-                                <div class="row mt-4">
-                                    <div class="col-4">
-                                        <h6>Skills:</h6>
-                                    </div>
-                                    <div class="col-8">
-                                        <p>
-                                            Electrical Design | PLC | Automation | Python | <br>
-                                            C# | Java | HTML | CSS | JS | Linux | <br>
-                                            Agile Web-Development | HMI
-                                        </p>
+                                    <div class="row mt-4">
+                                        <div class="col-4">
+                                            <h6>Skills:</h6>
+                                        </div>
+                                        <div class="col-8">
+                                            <p>
+                                                Electrical Design | PLC | Automation | Python | <br>
+                                                C# | Java | HTML | CSS | JS | Linux | <br>
+                                                Agile Web-Development | HMI
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card back">
-                        <div class="shadow-lg p-3 bg-white rounded">
-                            Back
+                        <div class="card back">
+                            <div class="shadow-lg p-3 bg-white rounded">
+                                Back
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,5 +60,46 @@
         <li>Key point 2</li>
         <li>Key point 3</li>
     </ul>
+
+    <p>Company | Start Date - End Date</p>
+    <p>Job Title</p>
+    <ul>
+        <li>Key point 1</li>
+        <li>Key point 2</li>
+        <li>Key point 3</li>
+    </ul>
+
+    <p>Company | Start Date - End Date</p>
+    <p>Job Title</p>
+    <ul>
+        <li>Key point 1</li>
+        <li>Key point 2</li>
+        <li>Key point 3</li>
+    </ul>
+
+    <p>Company | Start Date - End Date</p>
+    <p>Job Title</p>
+    <ul>
+        <li>Key point 1</li>
+        <li>Key point 2</li>
+        <li>Key point 3</li>
+    </ul>
+
+    <p>Company | Start Date - End Date</p>
+    <p>Job Title</p>
+    <ul>
+        <li>Key point 1</li>
+        <li>Key point 2</li>
+        <li>Key point 3</li>
+    </ul>
+
+    <p>Company | Start Date - End Date</p>
+    <p>Job Title</p>
+    <ul>
+        <li>Key point 1</li>
+        <li>Key point 2</li>
+        <li>Key point 3</li>
+    </ul>
+
 
 {% endblock %}
