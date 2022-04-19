@@ -5,6 +5,9 @@
       href="{% static 'website/css/bootstrap.css' %}"
 />
 
+<script src="{% static 'website/js/bootstrap.js' %}"></script>
+<script src="{% static 'website/js/custom.js' %}"></script>
+
 <link rel="stylesheet"
       type="text/css"
       href="{% static 'website/css/custom.css' %}">
@@ -16,6 +19,53 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand mb-0 h1">
+                <img class="d-inline-block align-top" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" />
+                Navbar
+            </a>
+            <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item">Feature #1</a></li>
+                            <li><a href="#" class="dropdown-item">Feature #2</a></li>
+                            <li><a href="#" class="dropdown-item">Feature #3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            Pricing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex">
+                <input type="text" class="form-control me-2">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </nav>
+
     {% block content %}
     {% endblock %}
 </body>
