@@ -5,7 +5,7 @@
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
-    <div class="parallax-bg" style="--url: url({% static 'img/dallas_skyline.jpg' %});">
+    <div class="parallax-bg" style="background-size: 100% auto; --url: url({% static 'img/dallas_skyline.jpg' %});">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-auto card-container mt-5 mb-5">
@@ -22,7 +22,7 @@
                                             </div>
                                         </div>
                                         <div class="col-8">
-                                            <h4>Preston Danielson</h4>
+                                            <h4><b>Preston Danielson</b></h4>
                                             Electrical/Software Engineer
                                         </div>
                                     </div>
@@ -52,86 +52,121 @@
         </div>
     </div>
 
-    <h1>Work Experience:</h1>
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
+    <div class="d-flex p-3 bg-dark" style="justify-content:center">
+        <h4 style="color:white"><b>Work Experience</b></h4>
+    </div>
 
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
+    <div class="d-flex p-2 bg-secondary" style="justify-content:center">
+        <h5 style="color:white"><b>Apex Systems</b></h5>
+    </div>
 
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
+    <div class="parallax-bg" style="--url: url({% static 'img/boeing.jpg' %}); justify-content:center">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="card mt-5 mb-5 p-2" style="max-width: 66%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{%static 'img/apex-systems.png' %}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Engineering Consultant</h5>
+                                <p class="card-text"><b>2021-2022</b></p>
+                                <p class="card-text">
+                                    Sub-contracted work for Boeing to assist in research and development of robotic manufacturing systems.
+                                    Worked remotely with a small team of engineers on electrical design, PLC logic, robotics, and HMI development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
+    <div class="d-flex p-2 bg-secondary" style="justify-content:center">
+        <h5 style="color:white"><b>Siemens Logistics</b></h5>
+    </div>
 
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
+    <div class="parallax-bg" style="--url: url({% static 'img/package-sorting.jpg' %});">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="card mt-5 mb-5 p-2" style="max-width: 66%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{%static 'img/siemens.jpg' %}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Controls Engineer</h5>
+                                <p class="card-text"><b>2018-2021</b></p>
+                                <p class="card-text">
+                                    Sub-contracted work for Boeing to assist in research and development of robotic manufacturing systems.
+                                    Worked remotely with a small team of engineers on electrical design, PLC logic, robotics, and HMI development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
+    <div class="d-flex p-2 bg-secondary" style="justify-content:center">
+        <h5 style="color:white"><b>Sabre Industries</b></h5>
+    </div>
 
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
+    <div class="parallax-bg" style="--url: url({% static 'img/solar.jpg' %}); justify-content:center">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="card mt-5 mb-5 p-2" style="max-width: 66%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{%static 'img/sabre.png' %}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Electrical Engineering Intern</h5>
+                                <p class="card-text"><b>2017-2018</b></p>
+                                <p class="card-text">
+                                    Sub-contracted work for Boeing to assist in research and development of robotic manufacturing systems.
+                                    Worked remotely with a small team of engineers on electrical design, PLC logic, robotics, and HMI development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
+    <div class="d-flex p-2 bg-secondary" style="justify-content:center">
+        <h5 style="color:white"><b>Fenway Group</b></h5>
+    </div>
 
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
-
-    <p>Company | Start Date - End Date</p>
-    <p>Job Title</p>
-    <ul>
-        <li>Key point 1</li>
-        <li>Key point 2</li>
-        <li>Key point 3</li>
-    </ul>
+    <div class="parallax-bg" style="--url: url({% static 'img/southwest.jpg' %}); justify-content:center">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="card mt-5 mb-5 p-2" style="max-width: 66%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{%static 'img/fenway-group.jpg' %}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Software Engineering Consultant</h5>
+                                <p class="card-text"><b>2016-2017</b></p>
+                                <p class="card-text">
+                                    Sub-contracted work for Boeing to assist in research and development of robotic manufacturing systems.
+                                    Worked remotely with a small team of engineers on electrical design, PLC logic, robotics, and HMI development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 {% endblock %}
