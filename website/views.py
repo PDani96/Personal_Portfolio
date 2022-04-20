@@ -5,9 +5,8 @@ from django.http import HttpResponse
 
 from meetings.models import Meeting
 
-def welcome(request):
-    return render(request, "website/welcome.html",
-                  {"meetings": Meeting.objects.all()})
+def home(request):
+    return render(request, "website/home.html")
 
 def date(request):
     return HttpResponse("This page was served at " + str(datetime.now()))
