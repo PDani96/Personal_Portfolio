@@ -8,6 +8,9 @@ from meetings.models import Meeting
 def home(request):
     return render(request, "website/home.html")
 
+def resume(request):
+    return render(request, "website/resume.html")
+
 def date(request):
     return HttpResponse("This page was served at " + str(datetime.now()))
 
