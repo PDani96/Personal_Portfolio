@@ -1,16 +1,28 @@
+mark {
+  background-color: rgb(166, 166, 166);
+  border-radius: 5px;
+  color: black;
+}
+
 .avatar-big {
     height:125px;
     width:125px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .avatar-small {
     height:50px;
     width:50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .avatar-med {
     height:75px;
     width:75px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .avatar-img {
@@ -69,4 +81,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.flex-fill {
+    flex:1;
+}
+
+.col-border:after{
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-right: 4px solid black;
+    padding-left: 15px;
+}
+
 

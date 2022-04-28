@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a href="{% url 'home' %}" class="navbar-brand mb-0 h1">
-                <img class="d-inline-block align-top" src="{% static 'img/logo.jpg' %}" width="auto" height="50" style="border-radius: 10px"/>
+                <img class="d-inline-block align-top" src="{% static 'img/logo.jpg' %}" width="auto" height="50" style="border-radius: 5px"/>
             </a>
             <button
             type="button"
@@ -91,7 +91,12 @@
         </div>
     </nav>
 
-    {% block content %}
+    <div class="bg-image"
+     style="background-image: url({% static 'img/leather.jpg' %});
+            background-attachment: fixed;
+            background-size: cover;">
+        {% block content %}
+    </div>
     {% endblock %}
 </body>
 </html>

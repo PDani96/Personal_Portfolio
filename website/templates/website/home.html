@@ -10,17 +10,17 @@
             <div class="row justify-content-center">
                 <div class="col-auto card-container mt-5 mb-5">
                     <div class="card-flip">
-                        <div class="card front" style="height: 300px; width: 525px;">
-                            <div class="container-fluid p-3">
-                                <div class="row">
-                                    <div class="col-4">
+                        <div class="card front" style="height: 300px; width: 525px; border-radius: 5px;">
+                            <div class="container flex-fill p-3">
+                                <div class="row flex-fill">
+                                    <div class="col-4 align-self-center">
                                         <div class="avatar-big">
                                             <img class="avatar-img rounded-circle"
                                                  src="{% static 'img/headshot1.jpg' %}"
                                             />
                                         </div>
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-8 align-self-center">
                                         <h4><b>Preston Danielson</b></h4>
                                         <p style="font-size: 0.875em">
                                             Electrical/Software Engineer<br>
@@ -30,30 +30,139 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="row mt-2">
+                                <div class="row flex-fill mt-3">
                                     <div class="col-4">
-                                        <h6>Skills:</h6>
+                                        <h6 style="text-align: center;">Key Skills:</h6>
                                     </div>
                                     <div class="col-8">
-                                        <p>
-                                            Electrical Design | PLC | Automation | Python | <br>
-                                            C# | Java | HTML | CSS | JS | Linux | <br>
-                                            Agile Web-Development | HMI
+                                        <p style="font-size: 0.875em">
+                                            Agile Methodologies | Python | C# | <br>
+                                            JavaScript | Java | HTML | CSS | JS | SQL | <br>
+                                            C++ | PLC |  CAD | HMI | .NET | Linux
                                         </p>
+                                    </div>
+                                </div>
+                                <div class="row flex-fill">
+                                    <p style="text-align: center;"><b>Flip card for more</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card back" style="height: 300px; width: 525px; border-radius: 5px;">
+                            <div class="container flex-fill p-3">
+                                <div class="row flex-fill">
+                                    <h6>About me:</h6>
+                                </div>
+                                <div class="row flex-fill">
+                                    <p style="font-size: 0.875em">
+                                        Engineer with 6+ years of experience in software development and electrical design.
+                                        Experienced in all phases of the Agile software development lifecycle, as well as commisioning live controls systems and on-site troubleshooting.
+                                        Seeking a position to grow my software skills, while utilizing my knowledge of hardware and electrical engineering fundamentals.
+                                    </p>
+                                </div>
+                                <p></p>
+                                <div class="row flex-fill">
+                                    <h6>Interests:</h6>
+                                </div>
+                                <div class="row flex-fill">
+                                    <p style="text-align: center; font-size: 0.875em;">
+                                        <mark>automation</mark> <mark>aerospace</mark> <mark>robotics</mark> <mark>microcontrollers</mark>
+                                    </p>
+                                    <p style="text-align: center; font-size: 0.875em;">
+                                        <mark>r&d</mark> <mark>ROS</mark>  <mark>human machine interaction</mark>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="parallax-bg rounded" style="--url: url({% static 'img/boeing.jpg' %}); max-width: 80%; border-radius: 5px;">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="card mt-5 mb-5 p-2" style="height: 400px; width:700px; border-radius: 5px;">
+                        <div class="row flex-fill">
+                            <div class="col-4 col-border align-self-center">
+                                <img src="{%static 'img/apex-systems.png' %}" class="img-fluid">
+                            </div>
+                            <div class="col-8 align-self-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Engineering Consultant</h5>
+                                    <p class="card-text"><b>2021-2022</b></p>
+                                    <br>
+                                    <p class="card-text">
+                                        Sub-contracted work with Boeing Research and Development team to design a cobot platform for aircraft maintenance and manufacturing.
+                                    </p>
+                                    <br>
+                                    <p class="card-text">
+                                        <b>Skills Used:</b>
+                                    </p>
+                                    <div class="row flex-fill">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li>Python</li>
+                                                <li>PLC (LD)</li>
+                                                <li>AutoCAD</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li>C++</li>
+                                                <li>ROS</li>
+                                                <li>FactoryTalk HMI</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card back" style="height: 300px; width: 525px;">
-                            <div class="row pt-3 px-3">
-                                <h6>About me:</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="parallax-bg rounded" style="--url: url({% static 'img/package-sorting.jpg' %});  max-width: 80%; border-radius: 5px;">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="card mt-5 mb-5 p-2" style="height: 400px; width:700px; border-radius: 5px;">
+                        <div class="row flex-fill">
+                            <div class="col-4 col-border align-self-center">
+                                <img src="{%static 'img/siemens.jpg' %}" class="img-fluid rounded-start" alt="...">
                             </div>
-                            <div class="row px-3">
-                                <p>
-                                    &emsp;Engineer with 6+ years of experience in software development and electrical design.
-                                    Experienced in all phases of the Agile software development lifecycle, as well as commisioning live controls systems and on-site troubleshooting.
-                                    Seeking a position to grow my software skills, while utilizing my knowledge of hardware and electrical engineering fundamentals.
-                                </p>
+                            <div class="col-8 align-self-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Automation & Controls Engineer</h5>
+                                    <p class="card-text"><b>2018-2021</b></p>
+                                    <br>
+                                    <p class="card-text">
+                                        Designed and commissioned PLC controls and electrical panels for airport baggage handling systems and UPS parcel sorting systems.
+                                    </p>
+                                    <br>
+                                    <p class="card-text">
+                                        <b>Skills Used:</b>
+                                    </p>
+                                    <div class="row flex-fill">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li>C#</li>
+                                                <li>Visual Basic</li>
+                                                <li>AutoCAD</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li>PLC (LD/FBD/ST)</li>
+                                                <li>FactoryTalk HMI</li>
+                                                <li>EPlan</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -62,29 +171,42 @@
         </div>
     </div>
 
-    <div class="d-flex p-3 bg-dark" style="justify-content:center; border: 1px solid black">
-        <h4 style="color:white"><b>Work Experience</b></h4>
-    </div>
-
-    <div class="d-flex p-2 bg-secondary" style="justify-content:center; border: 1px solid black">
-        <h5 style="color:white"><b>Apex Systems</b></h5>
-    </div>
-
-    <div class="parallax-bg" style="--url: url({% static 'img/boeing.jpg' %}); justify-content:center">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="card mt-5 mb-5 p-2" style="max-width: 66%;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{%static 'img/apex-systems.png' %}" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Engineering Consultant</h5>
-                                <p class="card-text"><b>2021-2022</b></p>
-                                <p class="card-text">
-                                    Sub-contracted work with Boeing Research and Development team to design a cobot platform for aircraft maintenance and manufacturing.
-                                </p>
+    <div class="row justify-content-center mt-5">
+        <div class="parallax-bg rounded" style="--url: url({% static 'img/solar.jpg' %}); max-width: 80%; border-radius: 5px;">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="card mt-5 mb-5 p-2" style="height: 400px; width:700px; border-radius: 5px;">
+                        <div class="row flex-fill">
+                            <div class="col-4 col-border align-self-center">
+                                <img src="{%static 'img/sabre.png' %}" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-8 align-self-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Electrical Engineering Intern</h5>
+                                    <p class="card-text"><b>2017-2018</b></p>
+                                    <br>
+                                    <p class="card-text">
+                                        Designed and commissioned PLC controls systems to monitor and control environmental conditions of Battery Energy Storage Systems.
+                                    </p>
+                                    <br>
+                                    <p class="card-text">
+                                        <b>Skills Used:</b>
+                                    </p>
+                                    <div class="row flex-fill">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li>PLC (ST)</li>
+                                                <li>HTML</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li>JavaScript</li>
+                                                <li>AutoCAD</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -93,25 +215,44 @@
         </div>
     </div>
 
-    <div class="d-flex p-2 bg-secondary" style="justify-content:center; border: 1px solid black">
-        <h5 style="color:white"><b>Siemens Logistics</b></h5>
-    </div>
-
-    <div class="parallax-bg" style="--url: url({% static 'img/package-sorting.jpg' %});">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="card mt-5 mb-5 p-2" style="max-width: 66%;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{%static 'img/siemens.jpg' %}" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Automation & Controls Engineer</h5>
-                                <p class="card-text"><b>2018-2021</b></p>
-                                <p class="card-text">
-                                    Designed and commissioned PLC controls and electrical panels for airport baggage handling systems and UPS parcel sorting systems.
-                                </p>
+    <div class="row justify-content-center mt-5">
+        <div class="parallax-bg rounded" style="--url: url({% static 'img/southwest.jpg' %}); max-width: 80%; border-radius: 5px;">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="card mt-5 mb-5 p-2" style="height: 400px; width:700px; border-radius: 5px;">
+                        <div class="row flex-fill">
+                            <div class="col-4 col-border align-self-center">
+                                <img src="{%static 'img/fenway-group.jpg' %}" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-8 align-self-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Software Engineer</h5>
+                                    <p class="card-text"><b>2016-2017</b></p>
+                                    <br>
+                                    <p class="card-text">
+                                        Programmer on a full-stack scrum development team to update and maintain enterprise web applications for Southwest Airlines.
+                                    </p>
+                                    <br>
+                                    <p class="card-text">
+                                        <b>Skills Used:</b>
+                                    </p>
+                                    <div class="row flex-fill">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li>C#</li>
+                                                <li>Python</li>
+                                                <li>Git</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li>Java</li>
+                                                <li>JavaScript</li>
+                                                <li>SQL</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,60 +260,5 @@
             </div>
         </div>
     </div>
-
-    <div class="d-flex p-2 bg-secondary" style="justify-content:center; border: 1px solid black">
-        <h5 style="color:white"><b>Sabre Industries</b></h5>
-    </div>
-
-    <div class="parallax-bg" style="--url: url({% static 'img/solar.jpg' %}); justify-content:center">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="card mt-5 mb-5 p-2" style="max-width: 66%;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{%static 'img/sabre.png' %}" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Electrical Engineering Intern</h5>
-                                <p class="card-text"><b>2017-2018</b></p>
-                                <p class="card-text">
-                                    Designed and commissioned PLC controls systems to monitor and control environmental conditions of Battery Energy Storage Systems.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="d-flex p-2 bg-secondary" style="justify-content:center; border: 1px solid black">
-        <h5 style="color:white"><b>Fenway Group</b></h5>
-    </div>
-
-    <div class="parallax-bg" style="--url: url({% static 'img/southwest.jpg' %}); justify-content:center">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="card mt-5 mb-5 p-2" style="max-width: 66%;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{%static 'img/fenway-group.jpg' %}" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Software Engineer</h5>
-                                <p class="card-text"><b>2016-2017</b></p>
-                                <p class="card-text">
-                                    Programmer on a full-stack scrum development team to update and maintain enterprise web applications for Southwest Airlines.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 {% endblock %}
