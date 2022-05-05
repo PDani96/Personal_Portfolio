@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website',
     'projects',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+AWS_ACCESS_KEY_ID = 'AKIAZAC77H5KJ7RXTH4Q'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'pdani-personal-portfolio'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+AWS_LOCATION = 'static'
+
+STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
