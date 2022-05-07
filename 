@@ -1,0 +1,15 @@
+Revert "Hosted static files on AWS S3"
+
+This reverts commit 663c26ec2d6f8ea48a5b82a9ae36833310511007.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   personal_portfolio/__pycache__/settings.cpython-39.pyc
+#	modified:   personal_portfolio/settings.py
+#	modified:   requirements.txt
+#
