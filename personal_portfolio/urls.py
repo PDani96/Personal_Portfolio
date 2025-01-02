@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 from website.views import home, resume
-from projects.views import esl, personal_portfolio
 
 urlpatterns = [
     path('admin/', admin.site.urls),

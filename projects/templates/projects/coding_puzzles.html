@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Preston Danielson | Engineer{% endblock %}
+
+{% block content %}
+  <div class="row justify-content-center pt-5">
+    <div class="col-7 align-self-center">
+      <div class="card">
+        <div class="card-body text-center">
+          <h1>Coding Puzzles</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center pt-5">
+    <div class="col-7 align-self-center">
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="projTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="overview-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tech-tab" data-bs-toggle="tab" href="#technical-details" role="tab" aria-controls="technical-details">Technical Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="skills-tab" data-bs-toggle="tab" href="#skills" role="tab" aria-controls="skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="sources-tab" data-bs-toggle="tab" href="#sources" role="tab" aria-controls="sources">Sources</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-content" id="projTabContent">
+            <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+              <p>
+                This project is ongoing indefinitely and is just a collection of solutions for coding exercises I participate in. I started this as a way to make sure I keep
+                learning and improving on my coding <b>fundamentals</b> and <b>problem solving skills</b>. Also, I want to document these solutions as a reference for any similar problems I may encounter in the future.
+                A description of the sources of some of these problems are below:<br><br>
+
+                <b>LeetCode</b> is a very popular and well known platform that offers coding challenges online in various languages. Many interviews pull coding questions from LeetCode or similar sites.
+                LeetCode also offers a daily coding challenge and specific questions for interview prep or specific topics of your choosing. I currently focus on doing problems in <b>Python</b> and <b>SQL</b> but plan
+                on branching out and tackling problems in many languages. I may also revisit some problems to optimize them or attempt them in a different language.<br><br>
+
+                <b>Advent of Code</b> is a yearly coding challenge set up as an Advent Calendar. Each day has a new Christmas themed coding challenge consisting of two parts. I decided to participate this year
+                as a way to get more practice creating <b>algorithms</b> for novel problems. All problems can be done in any language of choice. I have opted to use Python for this year. I am currently still working through
+                these challenges but plan on completion before the end of January.
+              <p>
+            </div>
+            <div class="tab-pane fade" id="technical-details" role="tabpanel" aria-labelledby="tech-tab">
+              <p>
+                Code for my LeetCode solutions can be found <a href="https://github.com/PDani96/LeetCodeSolutions">here</a>.<br><br>
+
+                Code for Advent of Code 2024 solutions can be found <a href="https://github.com/PDani96/AdventOfCode2024">here</a>.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+              <div class="row flex-fill justify-content-center">
+                <div class="col-6">
+                  <ul>
+                    <li>Python</li>
+                    <li>RegEx</li>
+                    <li>Data Analytics</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li>SQL</li>
+                    <li>Git</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="sources" role="tabpanel" aria-labelledby="sources-tab">
+              <div class="row flex-fill justify-content-center">
+                <div class="col-12">
+                  <ol>
+                    <li><a href="https://leetcode.com/">LeetCode</a></li>
+                    <li><a href="https://adventofcode.com/">Advent of Code</a></li>
+                    <li><a href="https://docs.python.org/3/">Python Docs</a></li>
+                  </ol>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center pt-5">
+    <div class="col-4">
+      <div class="card mt-4">
+        <a href="https://leetcode.com/">
+          <img class="card-img-top" src="{%static 'img/leetcode.png' %}">
+        </a>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card mt-4">
+        <a href="https://adventofcode.com/">
+          <img class="card-img-top" src="{%static 'img/advent_of_code.jpeg' %}">
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

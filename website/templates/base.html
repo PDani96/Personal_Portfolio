@@ -31,9 +31,6 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <div class="d-flex p-2 bg-warning" style="justify-content:center; border: 1px solid black">
-        <h6 style="color:black"><b>Construction zone: Work in progress</b></h6>
-    </div>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a href="{% url 'home' %}" class="navbar-brand mb-0 h1">
@@ -62,6 +59,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a href="{% url 'personal_portfolio' %}" class="dropdown-item">Personal Portfolio</a></li>
+                            <li><a href="{% url 'coding_puzzles' %}" class="dropdown-item">Coding Puzzles</a></li>
                             <li><a href="{% url 'esl' %}" class="dropdown-item">Electrostatic Loudspeaker</a></li>
                             <li><a href="#" class="dropdown-item">Impact Sensor</a></li>
                             <li><a href="#" class="dropdown-item">Reaction Monitor</a></li>
