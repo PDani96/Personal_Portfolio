@@ -42,17 +42,40 @@
 
                 Since most of my career I've worked on pre-existing projects, I started this to gain full experience from the beginning to the end of a project.
                 I also started this as a way to learn more about <b>Web Development</b>, <b>Source Control</b>, <b>Continuous Integration</b>, and <b>Cloud Platforms</b> in general.
-                This website was not created using any template or generation, it was all coded by me! Both <b>front and back end</b>, starting with nothing.<br><br>
+                This website was not created using any template or generation, it was all coded by me. Both <b>front and back end</b>, starting with nothing.<br><br>
 
-                My current plan is to use this to showcase the experience I have gained throughout my career, as well as other personal projects I work on. However, I have no strict plans to keep it that way and may post other random stuff here as well.
-                The end goal of this project is to have a place that I can grow and display my coding skills with what ever interesting ideas I come up with.<br><br>
+                My current plan is to use this to showcase the experience I have gained throughout my career, as well as other personal projects I work on. However, I have no strict plans
+                to keep it that way and may post other random stuff here as well. The end goal of this project is to have a place that I can grow and display my coding skills with what ever
+                interesting ideas I come up with.<br><br>
 
-                The code for this project, as well as all my other coding projects, can be found on my <a href="https://github.com/PDani96/Personal_Portfolio">GitHub</a>.
+                The code for this project, as well as all my other coding projects, can be found on my <a href="https://github.com/PDani96/Personal_Portfolio">GitHub</a>. I want to share
+                and document my work here so that I am able to easily reference past work or to serve as an example for anyone looking to create something similar.
               <p>
             </div>
             <div class="tab-pane fade" id="technical-details" role="tabpanel" aria-labelledby="tech-tab">
               <p>
-                Filler
+                When starting this website, the only thing I knew was that I wanted to use <b>Python</b> in creating it. Simply because I enjoy using Python and at the time had not used it for much
+                more than basic scripting. So naturally, my research led me to the <b>Django Python Web Framework</b>. Not only was Django Python based, but it used a <b>Model-View-Template (MVT) design pattern</b>.
+                This interested me because web applications I worked on in the past at Fenway Group used a similar, although slightly different, <b>Model-View-Controller (MVC) design pattern</b> like Apache Struts
+                and ASP.NET. Both of which were very old and out-dated frameworks. So it was nice to use a modern framework that popular sites like Instagram, Spotify, and Pinterest use.<br><br>
+
+                In an MVT framework, like in an MVC framework, the Model manages the data, database interactions, and business logic. The View is not the same as the view in MVC however,
+                and it is actually more like the Controller. The View is responsible for receiving user input and responding with the correct response. Much of what was done with Controllers
+                in MVC is done already in the MVT framework itself. Lastly, the Template is responsible for rendering the data passed from the View in the form of an <b>HTML</b> web page.<br><br>
+
+                After making an initial and very basic webpage, I realized the website was pretty ugly. So, I researched what <b>CSS</b> frameworks that other big websites using Django used and
+                <b>Bootstrap</b> came up often. So I chose that, and it is what has allowed me to make the UI more bearable.<br><br>
+
+                Once it looked pretty enough, I wanted to have it hosted on the web and came across <b>Heroku</b>, which is an affordable <b>Cloud Platform as a Service (PaaS)</b> owned by Salesforce
+                with a lot of support specifically for Python and Django. Essentially, Heroku hosts and manages <b>UNIX containers</b> that are running <b>gunicorn HTTP servers</b>
+                for Python web apps like mine. Heroku refers to these containers as <b>dynos</b>. Heroku also has very convenient <b>Continuous Integration (CI)</b> set up with <b>GitHub</b>
+                so that I can easily deploy my application to the server after committing changes.<br><br>
+
+                As I grew the website, I had an increasing amount of media like images and videos I wanted to post to the website. So I also set up <b>WhiteNoise</b> which is a Python library
+                that simplifies serving these "static files". This should optimize the loading of these files through the use of compression and caching.<br><br>
+
+                After all of that, I bought a domain name on <b>SquareSpace Domains</b> so that I can have a custom URL to share with people. Heroku allows me to add my custom domain to my web app and
+                supplies me with a <b>DNS target</b>. This DNS target is needed to configure my domain using SquareSpace so that my web app is displayed when visiting www.pdani.online.
               </p>
             </div>
             <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
@@ -63,7 +86,6 @@
                     <li>Bootstrap</li>
                     <li>HTML</li>
                     <li>Git</li>
-                    <li>HTML</li>
                   </ul>
                 </div>
                 <div class="col-6">
@@ -80,13 +102,13 @@
               <div class="row flex-fill justify-content-center">
                 <div class="col-12">
                   <ol>
-                    <li><a href="https://www.amazon.com/Electrostatic-Loudspeaker-Design-Cookbook/dp/1882580001">"The Electrostatic Loudspeaker Design Cookbook"</a> by Roger R. Sanders</li>
-                    <li><a href="https://www.amazon.com/Electrostatic-Loudspeaker-Construction-Ronald-Wagner/dp/0962419168">"Electrostatic Loudspeaker Design and Construction"</a> by Ronald Wagner</li>
-                    <li><a href="http://sanderssoundsystems.com/">Sanders Sound Systems</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Electrostatic_loudspeaker">Wikipedia</a></li>
-                    <li><a href="https://www.martinlogan.com/en/">Martin Logan</a></li>
+                    <li><a href="https://docs.djangoproject.com/en/5.1/">Django Web Framework Docs</a></li>
+                    <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap Docs</a></li>
+                    <li><a href="https://whitenoise.readthedocs.io/en/stable/index.html">WhiteNoise Docs</a></li>
+                    <li><a href="https://devcenter.heroku.com/categories/python-support">Heroku - Python Docs</a></li>
                   </ol>
                 </div>
+              </div>
               </div>
           </div>
         </div>
@@ -96,48 +118,54 @@
 
   <div class="row justify-content-center pt-5">
     <div class="col-4">
-      <div class="card">
-        <img class="card-img-top" src="{%static 'img/esl_prototype.jpg' %}">
+      <div class="card mt-4">
+        <a href="https://www.djangoproject.com/">
+          <img class="card-img-top" src="{%static 'img/django.png' %}">
+        </a>
         <div class="card-body">
-          <p class="card-text">Initial prototype.</p>
+          <p class="card-text">Django Python Based Web Framework</p>
         </div>
       </div>
       <div class="card mt-4">
-        <img class="card-img-top" src="{%static 'img/esl_prototype_2.jpg' %}">
+        <a href="https://www.jetbrains.com/pycharm/">
+          <img class="card-img-top" src="{%static 'img/pycharm.png' %}">
+        </a>
         <div class="card-body">
-          <p class="card-text">Second prototype.</p>
+          <p class="card-text">PyCharm for the IDE</p>
         </div>
       </div>
       <div class="card mt-4">
-        <video src="{%static 'vid/esl_prototype_demo.mp4' %}" controls></video>
+        <a href="https://www.heroku.com/">
+          <img class="card-img-top" src="{%static 'img/heroku.png' %}">
+        </a>
         <div class="card-body">
-          <p class="card-text">Working second prototype.</p>
-        </div>
-      </div>
-      <div class="card mt-4">
-        <img class="card-img-top" src="{%static 'img/transformer.jpg' %}">
-        <div class="card-body">
-          <p class="card-text">Step-up transformer. Ratio 1:50.</p>
+          <p class="card-text">Heroku Cloud Platform for Hosting the Application.</p>
         </div>
       </div>
     </div>
     <div class="col-4">
-      <div class="card">
-        <img class="card-img-top" src="{%static 'img/esl_finished.jpg' %}">
+      <div class="card mt-4">
+        <a href="https://getbootstrap.com/">
+          <img class="card-img-top" src="{%static 'img/bootstrap.png' %}">
+        </a>
         <div class="card-body">
-          <p class="card-text">Final model.</p>
+          <p class="card-text">Bootstrap Library for HTML, CSS, and JS.</p>
         </div>
       </div>
       <div class="card mt-4">
-        <video src="{%static 'vid/esl_final_demo.mp4' %}" controls></video>
+        <a href="https://github.com/">
+          <img class="card-img-top" src="{%static 'img/github.png' %}">
+        </a>
         <div class="card-body">
-          <p class="card-text">Working final model. (Ignore the sock please.)</p>
+          <p class="card-text">GitHub for Source Control and CI</p>
         </div>
       </div>
       <div class="card mt-4">
-        <img class="card-img-top" src="{%static 'img/filter.jpg' %}">
+        <a href="https://www.geeksforgeeks.org/difference-between-mvc-and-mvt-design-patterns/">
+          <img class="card-img-top" src="{%static 'img/design_patterns.png' %}">
+        </a>
         <div class="card-body">
-          <p class="card-text">Simple high-pass filter.</p>
+          <p class="card-text">MVT vs MVC Framework</p>
         </div>
       </div>
     </div>
