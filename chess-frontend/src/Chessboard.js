@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 import { Chessboard } from 'react-chessboard';
 
-const ChessBoardUI = () => {
-  const [boardPosition, setBoardPosition] = useState('start'); // Starting position
+const ChessGame = () => {
+  const [boardPosition, setBoardPosition] = useState(null);
 
-  const handleMove = (from, to) => {
-    console.log(`Move from ${from} to ${to}`);
-    // update the board position or communicate with the backend here later
+  const handlePieceMove = (move) => {
+    console.log("Move:", move);
+    setBoardPosition(move);
   };
 
   return (
     <div>
-      <Chessboard position={boardPosition} onPieceDrop={handleMove} />
+      <Chessboard
+        boardPosition={boardPosition}  // pass current board position
+        onPieceMove={handlePieceMove}   // handle piece movement
+      />
     </div>
   );
 };
 
-export default ChessBoardUI;
+export default ChessGame;
