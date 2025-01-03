@@ -6,6 +6,7 @@ charset-normalizer==3.4.1
 dj-database-url==2.3.0
 Django==5.1.4
 django-heroku==0.3.1
+djangorestframework==3.15.2
 docopt==0.6.2
 gunicorn==23.0.0
 idna==3.10
