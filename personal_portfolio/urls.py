@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from website.views import home, resume
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name="home"),
-    path('resume', resume, name="resume"),
-    path('projects/', include('projects.urls')),
+    path('', views.home, name="home"),
+    path('resume', views.resume, name="resume"),
+    path('esl', views.esl, name="esl"),
+    path('personal_portfolio', views.personal_portfolio, name="personal_portfolio"),
+    path('coding_puzzles', views.coding_puzzles, name="coding_puzzles"),
     path('chess/', include('chess_game.urls')),
 ]
