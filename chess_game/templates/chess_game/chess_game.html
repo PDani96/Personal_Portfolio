@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Preston Danielson | Engineer{% endblock %}
+
+{% block content %}
+
+    <div id="root"></div>  <!-- This is where your React app will be rendered -->
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+{% endblock %}
