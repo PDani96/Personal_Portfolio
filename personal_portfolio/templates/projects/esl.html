@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Preston Danielson | Engineer{% endblock %}
+
+{% block content %}
+  <div class="row justify-content-center pt-5">
+    <div class="col-7 align-self-center">
+      <div class="card">
+        <div class="card-body text-center">
+          <h1>Electrostatic Loudspeaker</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center pt-5">
+    <div class="col-7 align-self-center">
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="projTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="overview-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tech-tab" data-bs-toggle="tab" href="#technical-details" role="tab" aria-controls="technical-details">Technical Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="skills-tab" data-bs-toggle="tab" href="#skills" role="tab" aria-controls="skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="sources-tab" data-bs-toggle="tab" href="#sources" role="tab" aria-controls="sources">Sources</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-content" id="projTabContent">
+            <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+              <p>
+                This project came about as a novel idea for my senior design requirements before graduating in the Spring of 2018. The second prototype pictured below was used for the final demonstration to faculty and students of <b>Louisiana Tech University</b>.
+                Due to the restraints of the assignment, we were required to use more handmade materials for the speaker and power supply construction.<br><br>
+
+                During the following summer, I wanted to put together a more functional system.
+                I was able to achieve this through the support of Roger Sanders, a pioneer in ESL technology, who was able to supply me more professionally fabricated components. Much of the design for the initial prototypes was based off of Mr. Sander's
+                textbook on this subject, <b>"The Electrostatic Loudspeaker Design Cookbook"</b>. He also provided invaluable guidance to me throughout the process.<br><br>
+
+                The initial prototypes were built using ordinary perforated sheet metal for the stators which can be found in most local hardware stores. We sandwiched a graphite coated mylar film between these stators to create the diaphragm of the speaker.
+                We designed our own high voltage power supply to supply a polarizing voltage to the diaphragm by etching our own circuit board and using components supplied by the Louisiana Tech labs. Since ESL's do not handle low frequencies well,
+                we also designed our own high-pass filter. Accomplishing these tasks satisfied our design requirements, and we were able to purchase a step-up transformer and high voltage audio amplifier to complete our design.<br><br>
+
+                Special thanks to <b>Roger Sanders</b> and my two team members, <b>Matthew Fults</b> and <b>Brandon Ashcraft</b>.
+              <p>
+            </div>
+            <div class="tab-pane fade" id="technical-details" role="tabpanel" aria-labelledby="tech-tab">
+              <p>
+                An <b>electrostatic loudspeaker</b> is an alternative design in comparison to the cone woofers and dome tweeters found in most modern audio systems. Most modern speakers use a coil of wire that generate a magnetic field in order to produce
+                the force which drives the speaker's diaphragm. ESL's however, are essentially a large capacitor and use <b>electrostatic force</b> to drive the diaphragm.<br><br>
+
+                This is accomplished by placing a lightweight, conductive diaphragm between the stators of the capacitor which can be driven by the relatively weak electrostatic forces. A high static voltage, called the <b>polarizing voltage</b>, is then
+                applied to the diaphragm to interact with the charge on the stators and move the diaphragm. The higher the polarizing voltage, the higher the output. However, if the voltage is too high then arcing can occur between the stators and the diaphragm,
+                ruining audio quality and possibly the diaphragm itself. This is one of many design constraints and one of the reasons why ESL's do not handle low frequencies well.<br><br>
+
+                To produce the charge on the stators, an audio amplifier with a high-voltage output is needed in combination with a step-up transformer of a ratio around 1:50. This is to reach the desired voltage somewhere in the range of <b>4.5kV - 7kV</b>
+                needed for ESL operation due to the weak nature of electrostatic forces. The stators also need to be perforated to allow the audio to travel through them. This introduces more design constraints but also one of the unique qualities of ESL's,
+                dipole output.<br><br>
+
+                Dipole output may be seen as an advantage or disadvantage depending on the perspective it is being viewed from. In terms of the purest audio quality available though, it is very desirable in the right environments. <b>Dipole output</b> means that the
+                audio is output both directly in front of the speaker as well as behind. However, this also means there will be a "sweet spot" both in front of and behind the speaker where the audio quality will be at its best, so this is not suitable for large
+                group listening or in an environment that does not provide enough room behind the speaker without muddling the sound. Conventional speakers usually use cone drivers with a closed back in order to project the audio over a large area, but this actually
+                degrades the sound quality from the sound waves bouncing around the room and the back of the enclosure.<br><br>
+
+                Another advantage also lies in the lightweight nature of the diaphragm, which reduces distortion in one to two orders of magnitude lower than conventional cone drivers. As mentioned before though, one of the biggest disadvantages lies in the issues
+                ESL's have with handling low frequencies. ESL's are often paired in <b>hybrid systems</b> with cone woofers to handle the bass, while the ESL delivers crisp, clear high frequency audio. Examples of these systems can be found produced by <b>Sanders Sound Systems</b>
+                and <b>Martin Logan</b>.<br><br>
+
+                There are many more details, advantages, and disadvantages that go into the theory and design of ESL's which I will not get into here. If this topic interests you or you are an audiophile, I highly encourage you to research deeper into these
+                fascinating systems.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+              <div class="row flex-fill justify-content-center">
+                <div class="col-6">
+                  <ul>
+                    <li>Electrical Theory</li>
+                    <li>Power Supply Design</li>
+                    <li>Filter Design</li>
+                    <li>Audio Electronics</li>
+                    <li>Presentation</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li>High-Voltage</li>
+                    <li>Circuit Board Design</li>
+                    <li>Transformers</li>
+                    <li>Teamwork</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="sources" role="tabpanel" aria-labelledby="sources-tab">
+              <div class="row flex-fill justify-content-center">
+                <div class="col-12">
+                  <ol>
+                    <li><a href="https://www.amazon.com/Electrostatic-Loudspeaker-Design-Cookbook/dp/1882580001">"The Electrostatic Loudspeaker Design Cookbook"</a> by Roger R. Sanders</li>
+                    <li><a href="https://www.amazon.com/Electrostatic-Loudspeaker-Construction-Ronald-Wagner/dp/0962419168">"Electrostatic Loudspeaker Design and Construction"</a> by Ronald Wagner</li>
+                    <li><a href="http://sanderssoundsystems.com/">Sanders Sound Systems</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Electrostatic_loudspeaker">Wikipedia</a></li>
+                    <li><a href="https://www.martinlogan.com/en/">Martin Logan</a></li>
+                  </ol>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center pt-5">
+    <div class="col-4">
+      <div class="card">
+        <img class="card-img-top" src="{%static 'projects/img/esl_prototype.jpg' %}">
+        <div class="card-body">
+          <p class="card-text">Initial prototype.</p>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <img class="card-img-top" src="{%static 'projects/img/esl_prototype_2.jpg' %}">
+        <div class="card-body">
+          <p class="card-text">Second prototype.</p>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <video src="{%static 'projects/vid/esl_prototype_demo.mp4' %}" controls></video>
+        <div class="card-body">
+          <p class="card-text">Working second prototype.</p>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <img class="card-img-top" src="{%static 'projects/img/transformer.jpg' %}">
+        <div class="card-body">
+          <p class="card-text">Step-up transformer. Ratio 1:50.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <img class="card-img-top" src="{%static 'projects/img/esl_finished.jpg' %}">
+        <div class="card-body">
+          <p class="card-text">Final model.</p>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <video src="{%static 'projects/vid/esl_final_demo.mp4' %}" controls></video>
+        <div class="card-body">
+          <p class="card-text">Working final model. (Ignore the sock please.)</p>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <img class="card-img-top" src="{%static 'projects/img/filter.jpg' %}">
+        <div class="card-body">
+          <p class="card-text">Simple high-pass filter.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
